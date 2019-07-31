@@ -1,0 +1,24 @@
+{
+  "name": "react-project-demo",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/tjsglion/react-project-demo.git",
+  "author": "tjsglion <jiang.tang@aliyun.com>",
+  "license": "MIT",
+  "dependencies": {
+    "@babel/cli": "^7.5.5",
+    "@babel/core": "^7.5.5",
+    "@babel/preset-env": "^7.5.5",
+    "jest": "^24.8.0",
+    "mini-css-extract-plugin": "^0.8.0",
+    "typescript": "^3.5.3",
+    "webpack": "^4.38.0",
+    "webpack-cli": "^3.3.6",
+    "webpack-merge": "^4.2.1",
+    "yargs-parser": "^13.1.1"
+  },
+  "scripts": {
+    "test": "jest",
+    "client:dev": "webpack --mode development"
+  }
+}
