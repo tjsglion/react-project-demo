@@ -1,5 +1,5 @@
 const argv = require('yargs-parser')(process.argv.slice(2)); // 获取当前配置文件中的参数
-console.log(argv);
+// console.log(argv);
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const _merge = require('webpack-merge');
 const _mode = require(`./confi/webpack.${argv.mode}.js`);

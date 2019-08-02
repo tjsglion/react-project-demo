@@ -1,0 +1,13 @@
+{
+  "compilerOptions": {
+    "allowJs": true, // 包含 .js 和 .jsx
+    "lib": ["es6", "dom"], // 编译时引入的ES功能库
+    // "module": "es2015", // 生成的模块形式 none、commonjs、amd、system、umd、es6、es2015
+    // "module": "commonjs",
+    // "target": "es2015",
+    "noImplicitAny": true, // 存在隐式 any 时抛错
+    "jsx": "react"
+  },
+  "include": ["src", "tests/e2e/TestApp.tsx", "tests/unit/test.ts"],
+  "exclude": ["node_modules", "**/*.spec.(ts|tsx)"] // **/ 递归匹配任意子目录
+}
