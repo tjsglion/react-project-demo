@@ -25,7 +25,7 @@
     "unmatched": 0,
     "updated": 0
   },
-  "startTime": 1564732928834,
+  "startTime": 1564740411189,
   "success": false,
   "testResults": [
     {
@@ -35,8 +35,8 @@
       "numPendingTests": 0,
       "numTodoTests": 0,
       "perfStats": {
-        "end": 1564732932215,
-        "start": 1564732930721
+        "end": 1564740415797,
+        "start": 1564740412812
       },
       "snapshot": {
         "added": 0,
@@ -51,7 +51,7 @@
       "testResults": [
         {
           "ancestorTitles": [],
-          "duration": 3,
+          "duration": 2,
           "failureMessages": [],
           "fullName": "sum",
           "location": null,
@@ -70,8 +70,8 @@
       "numPendingTests": 0,
       "numTodoTests": 0,
       "perfStats": {
-        "end": 1564732932859,
-        "start": 1564732930727
+        "end": 1564740416281,
+        "start": 1564740412800
       },
       "snapshot": {
         "added": 0,
@@ -88,7 +88,7 @@
           "ancestorTitles": [
             "jest e2e test"
           ],
-          "duration": 28,
+          "duration": 22,
           "failureMessages": [],
           "fullName": "jest e2e test test",
           "location": null,
@@ -216,13 +216,13 @@
             },
             "end": {
               "line": 3,
-              "column": null
+              "column": 15
             }
           },
           "loc": {
             "start": {
               "line": 3,
-              "column": 12
+              "column": 17
             },
             "end": {
               "line": 14,

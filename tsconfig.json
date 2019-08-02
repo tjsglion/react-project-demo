@@ -1,13 +1,17 @@
 {
   "compilerOptions": {
     "allowJs": true, // 包含 .js 和 .jsx
+    "jsx": "react",
     "lib": ["es6", "dom"], // 编译时引入的ES功能库
-    // "module": "es2015", // 生成的模块形式 none、commonjs、amd、system、umd、es6、es2015
-    // "module": "commonjs",
-    // "target": "es2015",
+    "target": "es6", // 指定ECMAScript目标版本
+    "types": ["reflect-metadata", "node", "jest"], // 要包含的类型声明文件路径列表
+    "module": "commonjs", // 指定生成哪个模块代码    
     "noImplicitAny": true, // 存在隐式 any 时抛错
-    "jsx": "react"
+    "moduleResolution": "node",
+    // 使用 inversify 需要配置 emitDecoratorMetadata 与 experimentalDecorators 为true
+    "experimentalDecorators": true, // 启用实验性的ES装饰器
+    "emitDecoratorMetadata": true, // 给源码里的装饰器声明加上设计类型元数据
   },
-  "include": ["src", "tests/e2e/TestApp.tsx", "tests/unit/test.ts"],
+  "include": ["src", "src/web/components/TestApsrc/web/components/test.tst/test.ts", "tests/unit/sum.spec.ts", "tests/e2e/app.spec.tsx"],
   "exclude": ["node_modules", "**/*.spec.(ts|tsx)"] // **/ 递归匹配任意子目录
 }
