@@ -11,6 +11,10 @@
     // 使用 inversify 需要配置 emitDecoratorMetadata 与 experimentalDecorators 为true
     "experimentalDecorators": true, // 启用实验性的ES装饰器
     "emitDecoratorMetadata": true, // 给源码里的装饰器声明加上设计类型元数据
+    "baseUrl": "./src", // 解析非相对模块名的基准目录
+    "paths": { // 模块名到基于 baseUrl 的路径映射的列表
+      "@components/*": ["web/components/*"],
+    }
   },
   "include": ["src", "src/web/components/TestApsrc/web/components/test.tst/test.ts", "tests/unit/sum.spec.ts", "tests/e2e/app.spec.tsx"],
   "exclude": ["node_modules", "**/*.spec.(ts|tsx)"] // **/ 递归匹配任意子目录

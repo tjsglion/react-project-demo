@@ -28,13 +28,19 @@ const config = {
     * externals: { jquery: 'jQuery'}
     * import $ from 'jquery'
   */
-  externals: {},
+  externals: {
+    'react': 'React',
+    'react-dom': 'ReactDOM'
+  },
   resolve: { // 设置模块如何被解析
     alias: { // 创建 import 或 require 的别名，来确保模块引入变得简单
-      '@': resolve(__dirname, 'src/')
+      '@': resolve(__dirname, 'src/'),
+      '@components': resolve(__dirname, 'src/web/components'),
+      '@routers': resolve(__dirname, 'scr/web/routers'),
+      '@pages': resolve(__dirname, 'src/web/pages')
     },
     // 自动解析确定的扩展， 即在引入模块时可以不带扩展(.js|.jsx|.tsx);
-    extensions: ['.js', '.jsx', '.tsx'],
+    extensions: ['.js', '.jsx', '.tsx', '.ts'],
     // 告诉 webpack 解析模块时应该搜索的目录
     modules: [resolve(__dirname, 'src'), 'node_modules']
   },
