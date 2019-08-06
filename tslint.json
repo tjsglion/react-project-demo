@@ -1,3 +1,9 @@
 {
-  "extends": "tslint-config-airbnb"
+  "extends": "tslint-config-airbnb",
+  "rules": {
+    "space-in-parens": ["error", "always"],
+    "no-label-var": "error",
+    "trailing-comma": false,
+    "comma-dangle": ["error", "never"]
+  }
 }
